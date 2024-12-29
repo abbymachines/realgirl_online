@@ -1,5 +1,6 @@
 import logo from './images/long_egg_2.png';
 import './App.css';
+import FrontPage from './FrontPage.js'
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
           realgirl.online
         </p>
       </header>
+      <div>
+        <FrontPage className="Cover-box"/>
+      </div>
     </div>
   );
 }
