@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,11 +28,13 @@
   color: #61dafb;
 }
 
-.Cover-box {
+.Front-cover {
   color: black;
   padding: 50px 0px 50px 0px;
   margin: 10px 200px 10px 200px;
-  border: 1px solid black;
+  border: 1px solid white;
+  background-color: rgb(167, 255, 246);
+  font-style: Georgia, serif;
 }
 
 @keyframes App-logo-spin {
