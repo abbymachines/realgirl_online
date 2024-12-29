@@ -6,14 +6,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p className="Title">
           realgirl.online
         </p>
 
+        <img src={logo} className="App-logo" alt="logo" />
+
         <div className="Front-cover">
           <FrontCover />
         </div>
+
+        
       </header>
     </div>
   );
