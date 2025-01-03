@@ -1,4 +1,4 @@
-{"issues": {
+const db = {"issues": {
     "1": {
         "title": "first issue",
         "posts": {
