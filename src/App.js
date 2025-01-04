@@ -11,6 +11,7 @@ import Home from './Home.js';
 import About from './About.js';
 import Issue from './Issue.js';
 import Post from './Post.js';
+import NoPage from './NoPage.js';
 
 // const routes = [
 //   {
