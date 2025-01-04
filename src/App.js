@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Layout from './Layout.js';
 import Home from './Home.js';
+import About from './About.js';
 
 // const routes = [
 //   {
