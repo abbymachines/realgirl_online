@@ -12,6 +12,7 @@ import About from './About.js';
 import Issue from './Issue.js';
 import Post from './Post.js';
 import NoPage from './NoPage.js';
+import ReactDOM from 'react-dom/client';
 
 // const routes = [
 //   {
