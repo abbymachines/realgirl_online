@@ -1,4 +1,5 @@
 import FrontCover from "./FrontCover";
+import logo from './images/long_egg_2.png';
 
 export default function Home() {
   return (
