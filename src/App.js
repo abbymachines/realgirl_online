@@ -7,6 +7,7 @@ import db from './TableOfContents.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Layout from './Layout.js';
+import Home from './Home.js';
 
 // const routes = [
 //   {
