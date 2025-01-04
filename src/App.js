@@ -4,6 +4,8 @@ import FrontCover from './FrontCover.js'
 
 import db from './TableOfContents.js';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 // const routes = [
 //   {
 //     path: "/about",
