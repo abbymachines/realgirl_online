@@ -1,8 +1,4 @@
-import logo from './images/long_egg_2.png';
 import './App.css';
-import FrontCover from './FrontCover.js'
-
-import db from './TableOfContents.js';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -13,6 +9,7 @@ import Issue from './Issue.js';
 import Post from './Post.js';
 import NoPage from './NoPage.js';
 import ReactDOM from 'react-dom/client';
+import Issues from './Issues.js';
 
 function App() {
   return (
@@ -25,6 +22,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="issue" element={<Issue />} />
+          <Route path="issues" element={<Issues />} />
           <Route path="post" element={<Post />} />
           <Route path="*" element={<NoPage />} />
         </Route>

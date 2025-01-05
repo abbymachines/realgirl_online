@@ -32,5 +32,24 @@ const db = {"issues": {
                 "URL": "third URL"
             }
         }
+    },
+    "3": {
+        "title": "third issue",
+        "posts": {
+            "1": {
+                "title": "first post of third issue",
+                "URL": "first URL"
+            },
+            "2": {
+                "title": "second post of third issue",
+                "URL": "second URL"
+            },
+            "3": {
+                "title": "third  post of third issue",
+                "URL": "third URL"
+            }
+        }
     }
 }}
+
+export default db;
