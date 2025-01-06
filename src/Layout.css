@@ -1,7 +1,3 @@
-ul {
-    display: inline;
-}
-
-li {
+ul.Nav-list li {
     display: inline;
 }
