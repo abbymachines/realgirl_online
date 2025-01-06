@@ -1,3 +1,8 @@
 ul.Nav-list li {
     display: inline;
 }
+
+ul.Nav-list {
+    text-align: center;
+    padding: 0;
+}
