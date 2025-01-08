@@ -1,5 +1,6 @@
 ul.Nav-list li {
     display: inline-block;
+    font-family: 'Helvetica', sans-serif;
 }
 
 ul.Nav-list {
