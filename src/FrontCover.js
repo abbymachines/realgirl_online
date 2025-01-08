@@ -3,6 +3,13 @@ import db from './TableOfContents';
 
 export default function FrontCover(props) {
   const issue = props.issue;
+  let postTitles = []
+  let postKeys = Object.keys(db['issues'][issue]['posts'])
+  let postsLength = postKeys.length + 1;
+
+  for (let i = 1; i < postsLength; i++) {
+    postTitles.push(db['issues'][issue]['posts'][i.toString()]['title'])
+  }
 
   return (
     <div className='Front-cover'>
@@ -11,13 +18,7 @@ export default function FrontCover(props) {
         </p>
 
         <ul>
-          <li>This would be the first article.</li>
-
-          <li>This would be the second article.</li>
-
-          <li>This would be the third article.</li>
-
-          <li>Ideally, there would be a: CSS styling for these items (and pretty minimal styling at that), as well as some code that renders this list out of a provided array of list items. These items would appear here as links and then be routed out to separate pages. The pages themselves would have buttons to allow you to click through stories and issues.</li>
+          {postTitles.map(postTitle => <li>{postTitle}</li>)}
         </ul>
     </div>
   );
