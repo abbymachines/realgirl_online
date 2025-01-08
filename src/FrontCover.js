@@ -1,11 +1,13 @@
 import './FrontCover.css';
+import db from './TableOfContents';
 
-export default function FrontCover() {
+export default function FrontCover(props) {
+  const issue = props.issue;
 
   return (
     <div className='Front-cover'>
         <p className='Issue-title'>
-          this is the front cover
+          {issue}. {db['issues'][issue]['title']}
         </p>
 
         <ul>
