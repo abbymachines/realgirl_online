@@ -1,8 +1,23 @@
 li {
     list-style-type: none;
-    padding: 20px;
+    padding: 10px;
+    padding-inline-start: 5px;
+    font-family: Georgia, serif;
 }
 
-ul, p {
+p {
     font-family: Georgia, serif;
+    /* padding-inline-start: 5px; */
+}
+
+.Issue-title {
+    text-align: center;
+}
+
+.Front-cover {
+    color: rgb(0, 0, 0);
+    padding: 50px 0px 50px;
+    margin: 10px 200px 120px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(227, 226, 226);
 }

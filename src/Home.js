@@ -10,7 +10,7 @@ export default function Home() {
 
       <img src={logo} className="App-logo" alt="logo" />
 
-      <div className="Front-cover">
+      <div>
         <FrontCover />
       </div>
 

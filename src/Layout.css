@@ -1,8 +1,10 @@
 ul.Nav-list li {
-    display: inline;
+    display: inline-block;
 }
 
 ul.Nav-list {
     text-align: center;
     padding: 0;
+    background-color: #ffff00;
+    margin: 0;
 }
