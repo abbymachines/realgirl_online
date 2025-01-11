@@ -11,7 +11,12 @@ import NoPage from './NoPage.js';
 import ReactDOM from 'react-dom/client';
 import Issues from './Issues.js';
 
+import db from './TableOfContents.js';
+
 function App() {
+  let issueKeys = Object.keys(db['issues']);
+  const latestIssue = issueKeys.length;
+
   return (
     // For more info about how to configure routes, visit
     // https://www.w3schools.com/react/react_router.asp
@@ -21,8 +26,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="issue/:issueId" element={<Issue />} />
-          <Route path="issues" element={<Issues />} />
+          <Route path="issue/:issueId" element={<Issue latestIssue={latestIssue} />} />
+          <Route path="issues" element={<Issues latestIssue={latestIssue} />} />
           <Route path="post" element={<Post />} />
           <Route path="*" element={<NoPage />} />
         </Route>

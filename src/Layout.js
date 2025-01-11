@@ -4,8 +4,8 @@ import db from "./TableOfContents";
 
 const Layout = () => {
   let issueKeys = Object.keys(db['issues']);
-  // const latestIssue = issueKeys.length;
-  const latestIssueURL = `/issue/${issueKeys.length}`
+  const latestIssue = issueKeys.length;
+  const latestIssueURL = `/issue/${latestIssue}`
 
   return (
     <>
