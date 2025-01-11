@@ -1,14 +1,17 @@
+import { render, Link } from 'react-router-dom';
 import './FrontCover.css';
 import db from './TableOfContents';
 
 export default function FrontCover(props) {
   const issue = props.issue;
-  let postTitles = []
-  let postKeys = Object.keys(db['issues'][issue]['posts'])
-  let postsLength = postKeys.length + 1;
+  let postIds = Object.keys(db['issues'][issue]['posts'])
 
-  for (let i = 1; i < postsLength; i++) {
-    postTitles.push(db['issues'][issue]['posts'][i.toString()]['title'])
+  function renderPostUrl(postId) {
+    return `/issue/${issue}/${postId}`
+  }
+
+  function renderPostLink(postId) {
+    return <Link to={renderPostUrl(postId)}>{db['issues'][issue]['posts'][postId.toString()]['title']}</Link>
   }
 
   return (
@@ -18,7 +21,7 @@ export default function FrontCover(props) {
         </p>
 
         <ul>
-          {postTitles.map(postTitle => <li>{postTitle}</li>)}
+          {postIds.map(postId => <li>{renderPostLink(postId)}</li>)}
         </ul>
     </div>
   );
