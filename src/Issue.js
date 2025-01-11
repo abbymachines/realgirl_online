@@ -1,7 +1,14 @@
+import { useParams } from "react-router-dom";
+import FrontCover from "./FrontCover";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "react-router-dom";
+
 export default function Issue() {
+  const { issueId } = useParams();
+
   return (
     <div>
-      this is an issue of realgirletceteraandsoforth
+      <FrontCover issue={issueId} />
     </div>
   )
 }
