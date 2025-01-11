@@ -13,21 +13,6 @@ export default function Issue(props) {
   const nextIssueURL = `/issue/${issueIdInt + 1}`;
   const previousIssueURL = `/issue/${issueIdInt - 1}`;
 
-  // let isLatestIssue = false;
-  // let isFirstIssue = false;
-
-  if (issueIdInt <= 1) {
-    const isFirstIssue = true;
-  } else {
-    const isFirstIssue = false;
-  }
-
-  if (issueIdInt < props.latestIssue) {
-    const isLatestIssue = false;
-  } else {
-    const isLatestIssue = true;
-  }
-
   function renderPreviousLink() {
     if(issueIdInt <= 1) {
       return <p></p>
