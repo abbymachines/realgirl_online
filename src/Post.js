@@ -1,7 +1,15 @@
+import { useParams } from "react-router-dom";
+
+import db from "./TableOfContents";
+
 export default function Post() {
+  const { issueId, postId } = useParams();
+
   return (
     <div>
-      imagine this here is a post right here
+      <p>{db["issues"][issueId]["posts"][postId]["title"]}</p>
+
+      <p>{db["issues"][issueId]["posts"][postId]["URL"]}</p>
     </div>
   )
 }
