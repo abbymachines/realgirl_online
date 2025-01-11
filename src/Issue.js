@@ -1,6 +1,5 @@
 import { Link, useParams } from "react-router-dom";
 import FrontCover from "./FrontCover";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "react-router-dom";
 import { render } from "@testing-library/react";
 
