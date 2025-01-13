@@ -8,7 +8,7 @@ const Layout = () => {
   const latestIssueURL = `/issue/${latestIssue}`
 
   return (
-    <>
+    <div>
       <nav>
         <ul class="Nav-list">
           <li>
@@ -30,7 +30,7 @@ const Layout = () => {
       </nav>
 
       <Outlet />
-    </>
+    </div>
   )
 };
 

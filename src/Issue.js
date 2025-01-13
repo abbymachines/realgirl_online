@@ -14,17 +14,17 @@ export default function Issue(props) {
 
   function renderPreviousLink() {
     if(issueIdInt <= 1) {
-      return <p></p>
+      return <span></span>
     } else {
       return <span>⬅⬅⬅ <Link to={previousIssueURL}>PREVIOUS ISSUE</Link> |</span>
     }
   }
 
   function renderNextLink() {
-    if(issueIdInt < props.latestIssue) {
+    if(issueIdInt < latestIssue) {
       return <span>| <Link to={nextIssueURL}>NEXT ISSUE</Link> ⮕⮕⮕</span>
     } else {
-      return <p></p>
+      return <span></span>
     }
   }
 
