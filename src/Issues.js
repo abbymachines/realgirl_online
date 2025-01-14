@@ -10,7 +10,7 @@ for (let i = 1; i < issuesLength; i++) {
 
 function Issues() {
   return (
-    <div>
+    <div className="Front-cover">
       {titles.map(title => <p>{title}</p>)}
     </div>
   )
