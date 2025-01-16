@@ -1,6 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import './Layout.css';
 import db from "./TableOfContents";
+import './App.css';
 
 const Layout = () => {
   let issueKeys = Object.keys(db['issues']);
@@ -26,7 +27,9 @@ const Layout = () => {
         </ul>
       </nav>
 
-      <Outlet />
+      <div className="Grey-background">
+        <Outlet />
+      </div>
     </div>
   )
 };

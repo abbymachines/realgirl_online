@@ -24,20 +24,21 @@ export default function Home() {
   }
 
   return (
-    <header className="App-header">
-      <p className="Title">
-        realgirl.online
-      </p>
+    <div>
+      <header className="App-header">
+        <p className="Title">
+          realgirl.online
+        </p>
 
-      <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" />
+    {/* 
+        <button onClick={decrementIssue}>back</button>
+        <button onClick={incrementIssue}>next</button> */}
 
-      <div>
-        <FrontCover issue={currentIssue} />
-      </div>
+      </header>
 
-      <button onClick={decrementIssue}>back</button>
-      <button onClick={incrementIssue}>next</button>
-
-    </header>
+      <FrontCover issue={currentIssue} />
+      
+    </div>
   )
 }
