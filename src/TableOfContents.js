@@ -1,18 +1,18 @@
 const db = {"issues": {
     "1": {
-        "title": "first issue",
+        "title": "Poetry is the universe is actually the river",
         "posts": {
             "1": {
-                "title": "first post",
-                "URL": "first URL"
+                "title": "One Thousand Machines (v1.0) #476",
+                "URL": "Poetry is the universe is actually the river"
             },
             "2": {
-                "title": "second post",
-                "URL": "second URL"
+                "title": "remembering the sanrio store they used to have at horton plaza mall in san diego",
+                "URL": "i think this mall was really fundamental to the formatting of my psyche"
             },
             "3": {
-                "title": "third post",
-                "URL": "third URL"
+                "title": "On The Cheese and the Worms",
+                "URL": "a microhistory of a 16th-century miller by Carlo Ginzburg"
             }
         }
     },
