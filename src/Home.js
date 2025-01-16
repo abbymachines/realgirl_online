@@ -31,13 +31,14 @@ export default function Home() {
         </p>
 
         <img src={logo} className="App-logo" alt="logo" />
-    {/* 
-        <button onClick={decrementIssue}>back</button>
-        <button onClick={incrementIssue}>next</button> */}
-
       </header>
 
       <FrontCover issue={currentIssue} />
+
+      <p>
+        <button onClick={decrementIssue}>back</button>
+        <button onClick={incrementIssue}>next</button>
+      </p>
       
     </div>
   )

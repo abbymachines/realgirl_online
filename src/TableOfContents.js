@@ -8,7 +8,7 @@ const db = {"issues": {
             },
             "2": {
                 "title": "remembering the sanrio store they used to have at horton plaza mall in san diego",
-                "URL": "i think this mall was really fundamental to the formatting of my psyche"
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2"
             },
             "3": {
                 "title": "On The Cheese and the Worms",
