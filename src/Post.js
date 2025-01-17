@@ -22,11 +22,9 @@ export default function Post() {
 
   return (
     <div className="Post">
-      <p>{db["issues"][issueId]["posts"][postId]["title"]}</p>
+      <p>{issueId}.{postId}<br />{db["issues"][issueId]["posts"][postId]["title"]}</p>
 
-      <p>{db["issues"][issueId]["posts"][postId]["URL"]}</p>
-
-      {data ? <div>{JSON.stringify(data[0].content.rendered)}</div> : <div>Loading...</div>}
+      {data ? <div dangerouslySetInnerHTML={{__html: data[0].content.rendered}} /> : <div>Loading...</div>}
     </div>
   )
 }

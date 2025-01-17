@@ -4,7 +4,7 @@ const db = {"issues": {
         "posts": {
             "1": {
                 "title": "One Thousand Machines (v1.0) #476",
-                "URL": "Poetry is the universe is actually the river"
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=1-one-thousand-machines-v1-0"
             },
             "2": {
                 "title": "remembering the sanrio store they used to have at horton plaza mall in san diego",
@@ -12,7 +12,7 @@ const db = {"issues": {
             },
             "3": {
                 "title": "On The Cheese and the Worms",
-                "URL": "a microhistory of a 16th-century miller by Carlo Ginzburg"
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
             }
         }
     },
@@ -21,15 +21,15 @@ const db = {"issues": {
         "posts": {
             "1": {
                 "title": "first post of second issue",
-                "URL": "first URL"
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
             },
             "2": {
                 "title": "second post of second issue",
-                "URL": "second URL"
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
             },
             "3": {
                 "title": "third  post of second issue",
-                "URL": "third URL"
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
             }
         }
     },
@@ -38,15 +38,15 @@ const db = {"issues": {
         "posts": {
             "1": {
                 "title": "first post of third issue",
-                "URL": "first URL"
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
             },
             "2": {
                 "title": "second post of third issue",
-                "URL": "second URL"
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
             },
             "3": {
                 "title": "third  post of third issue",
-                "URL": "third URL"
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
             }
         }
     }
