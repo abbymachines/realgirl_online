@@ -3,6 +3,7 @@ import { useState } from 'react';
 import FrontCover from "./FrontCover";
 import logo from './images/long_egg_2.png';
 import db from './TableOfContents';
+import Issue from "./Issue";
 
 // let titles = [];
 let issueKeys = Object.keys(db['issues']);
@@ -34,11 +35,6 @@ export default function Home() {
       </header>
 
       <FrontCover issue={currentIssue} />
-
-      <p>
-        <button onClick={decrementIssue}>back</button>
-        <button onClick={incrementIssue}>next</button>
-      </p>
       
     </div>
   )
