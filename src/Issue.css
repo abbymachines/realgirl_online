@@ -1,0 +1,15 @@
+.Issue-nav > * {
+    color: white;
+}
+
+.Issue-nav a {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 14px 25px;
+    display: inline-block;
+}
+
+.Issue-nav a:hover, a:active {
+    background-color: red;
+}
