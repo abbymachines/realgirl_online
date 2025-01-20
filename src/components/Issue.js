@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import FrontCover from "../FrontCover";
+import FrontCover from "./FrontCover";
 import "react-router-dom";
 import { render } from "@testing-library/react";
 import './Issue.css';

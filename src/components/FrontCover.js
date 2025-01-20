@@ -1,6 +1,6 @@
 import { render, Link } from 'react-router-dom';
 import './FrontCover.css';
-import db from './TableOfContents';
+import db from '../TableOfContents';
 
 export default function FrontCover(props) {
   const issue = props.issue;
