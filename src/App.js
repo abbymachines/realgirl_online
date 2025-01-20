@@ -10,6 +10,7 @@ import Post from './components/Post.js';
 import NoPage from './NoPage.js';
 import ReactDOM from 'react-dom/client';
 import Issues from './components/Issues.js';
+import ReadPage from './pages/ReadPage.js';
 
 import db from './TableOfContents.js';
 
@@ -26,7 +27,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="issue/:issueId" element={<Issue latestIssue={latestIssue} />} />
+          <Route path="issue/:issueId" element={<ReadPage latestIssue={latestIssue} />} />
           <Route path="issues" element={<Issues latestIssue={latestIssue} />} />
           <Route path="/issue/:issueId/:postId" element={<Post />} />
           <Route path="*" element={<NoPage />} />

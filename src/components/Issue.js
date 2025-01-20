@@ -5,9 +5,9 @@ import { render } from "@testing-library/react";
 import './Issue.css';
 
 export default function Issue(props) {
+  const issueId = props.issueId;
   const latestIssue = props.latestIssue;
 
-  const { issueId } = useParams();
   const issueIdInt = parseInt(issueId)
 
   const nextIssueURL = `/issue/${issueIdInt + 1}`;

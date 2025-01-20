@@ -34,7 +34,8 @@ export default function Home() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
-      <FrontCover issue={currentIssue} />
+      {/* <FrontCover issue={currentIssue} /> */}
+      <Issue issueId={currentIssue} latestIssue={latestIssue} />
       
     </div>
   )
