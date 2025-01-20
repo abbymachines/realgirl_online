@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState } from 'react';
 
-import db from "./TableOfContents";
+import db from "../TableOfContents";
 
 import './Post.css';
 
