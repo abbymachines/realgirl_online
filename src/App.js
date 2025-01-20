@@ -5,11 +5,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout.js';
 import Home from './Home.js';
 import About from './About.js';
-import Issue from './Issue.js';
+import Issue from './components/Issue.js';
 import Post from './Post.js';
 import NoPage from './NoPage.js';
 import ReactDOM from 'react-dom/client';
-import Issues from './Issues.js';
+import Issues from './components/Issues.js';
 
 import db from './TableOfContents.js';
 

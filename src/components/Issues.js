@@ -1,4 +1,4 @@
-import db from './TableOfContents.js';
+import db from '../TableOfContents.js';
 
 let titles = [];
 let issueKeys = Object.keys(db['issues']);

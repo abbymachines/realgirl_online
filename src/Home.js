@@ -3,7 +3,7 @@ import { useState } from 'react';
 import FrontCover from "./FrontCover";
 import logo from './images/long_egg_2.png';
 import db from './TableOfContents';
-import Issue from "./Issue";
+import Issue from "./components/Issue";
 
 // let titles = [];
 let issueKeys = Object.keys(db['issues']);
