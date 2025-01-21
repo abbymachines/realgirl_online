@@ -18,11 +18,11 @@ export default function FrontCover(props) {
 
   return (
     <div className='Front-cover'>
-        <center><img src={logo} className="App-logo" alt="logo" /></center>
-        
         <p className='Issue-title'>
           {issue}. {db['issues'][issue]['title']}
         </p>
+
+        <center><img src={logo} className="App-logo" alt="logo" /></center>
 
         <ul>
           {postIds.map(postId => <li>{renderPostLink(postId)}</li>)}
@@ -30,5 +30,3 @@ export default function FrontCover(props) {
     </div>
   );
 }
-
-// export default FrontPage;
