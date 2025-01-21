@@ -2,6 +2,8 @@ import { render, Link } from 'react-router-dom';
 import './FrontCover.css';
 import db from '../TableOfContents';
 
+import logo from '../images/long_egg_2.png';
+
 export default function FrontCover(props) {
   const issue = props.issue;
   let postIds = Object.keys(db['issues'][issue]['posts'])
@@ -16,6 +18,8 @@ export default function FrontCover(props) {
 
   return (
     <div className='Front-cover'>
+        <center><img src={logo} className="App-logo" alt="logo" /></center>
+        
         <p className='Issue-title'>
           {issue}. {db['issues'][issue]['title']}
         </p>

@@ -30,8 +30,6 @@ export default function Home() {
         <p className="Title">
           realgirl.online
         </p>
-
-        <img src={logo} className="App-logo" alt="logo" />
       </header>
 
       {/* <FrontCover issue={currentIssue} /> */}
