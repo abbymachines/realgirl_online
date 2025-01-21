@@ -27,6 +27,12 @@ const Layout = () => {
         </ul>
       </nav>
 
+      <header className="App-header">
+        <p className="Title">
+          realgirl.online
+        </p>
+      </header>
+
       <div className="Grey-background">
         <Outlet />
       </div>

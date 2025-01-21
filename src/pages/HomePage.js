@@ -26,15 +26,7 @@ export default function Home() {
 
   return (
     <div>
-      <header className="App-header">
-        <p className="Title">
-          realgirl.online
-        </p>
-      </header>
-
-      {/* <FrontCover issue={currentIssue} /> */}
       <Issue issueId={currentIssue} latestIssue={latestIssue} />
-      
     </div>
   )
 }
