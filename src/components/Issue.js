@@ -12,9 +12,6 @@ export default function Issue(props) {
 
   return (
     <div>
-      {console.log("issueId: " + issueIdInt)}
-      {console.log("latestIssue: " + latestIssueInt)}
-
       <FrontCover issue={issueId} />
 
       <IssueNav className="Issue-nav" issueId={issueIdInt} latestIssueId={latestIssueInt} />
