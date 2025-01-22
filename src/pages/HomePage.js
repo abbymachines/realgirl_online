@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import FrontCover from "../components/FrontCover";
-import logo from '../images/long_egg_2.png';
+// import logo from '../images/long_egg_2.png';
 import db from '../TableOfContents';
 import Issue from "../components/Issue";
 

@@ -1,6 +1,7 @@
 const db = {"issues": {
     "1": {
         "title": "Poetry is the universe is actually the river",
+        "cover": "long_egg_2.png",
         "posts": {
             "1": {
                 "title": "One Thousand Machines (v1.0) #476",
@@ -18,6 +19,7 @@ const db = {"issues": {
     },
     "2": {
         "title": "second issue",
+        "cover": "cover_2.png",
         "posts": {
             "1": {
                 "title": "first post of second issue",
@@ -35,6 +37,7 @@ const db = {"issues": {
     },
     "3": {
         "title": "third issue",
+        "cover": "long_egg_2.png",
         "posts": {
             "1": {
                 "title": "first post of third issue",

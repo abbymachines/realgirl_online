@@ -2,12 +2,18 @@ import { render, Link } from 'react-router-dom';
 import './FrontCover.css';
 import db from '../TableOfContents';
 
-import logo from '../images/long_egg_2.png';
+// import logo from '../images/long_egg_2.png';
 
 export default function FrontCover(props) {
+  
+
   const issue = props.issue;
   let postIds = Object.keys(db['issues'][issue]['posts'])
 
+  function renderCoverImage() {
+    return `/images/${db['issues'][issue]['cover']}`
+  }
+  
   function renderPostUrl(postId) {
     return `/issue/${issue}/${postId}`
   }
@@ -22,7 +28,7 @@ export default function FrontCover(props) {
           {issue}. {db['issues'][issue]['title']}
         </p>
 
-        <center><img src={logo} className="App-logo" alt="logo" /></center>
+        <center><img src={renderCoverImage()}className="App-logo" alt="logo" /></center>
 
         <ul>
           {postIds.map(postId => <li>{renderPostLink(postId)}</li>)}
