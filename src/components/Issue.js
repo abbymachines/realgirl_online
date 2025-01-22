@@ -33,9 +33,9 @@ export default function Issue(props) {
     <div>
       <FrontCover issue={issueId} />
 
-      <center className="Issue-nav">
+      <div className="Issue-nav">
         {renderPreviousLink()} {renderNextLink()}
-      </center>
+      </div>
     </div>
   )
 }

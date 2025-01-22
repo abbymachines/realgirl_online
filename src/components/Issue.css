@@ -1,5 +1,10 @@
+.Issue-nav {
+    text-align:center;
+}
+
 .Issue-nav > * {
     color: white;
+    margin:auto;
 }
 
 .Issue-nav a {
@@ -7,7 +12,7 @@
     text-decoration: none;
     background-color: black;
     padding: 14px 25px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .Issue-nav a:hover, a:active {
