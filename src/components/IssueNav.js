@@ -12,13 +12,13 @@ export default function IssueNav(props) {
         if(issueId <= 1) {
           return <span></span>
         } else {
-          return <span><Link to={previousIssueURL} className="Issue-nav-previous">⬅⬅⬅ PREVIOUS ISSUE</Link></span>
+          return <span><Link to={previousIssueURL} className="Issue-nav-previous">⬅ PREVIOUS ISSUE</Link></span>
         }
       }
     
       function renderNextLink() {
         if(issueId < latestIssueId) {
-          return <span><Link to={nextIssueURL} className="Issue-nav-next">NEXT ISSUE ⮕⮕⮕</Link></span>
+          return <span><Link to={nextIssueURL} className="Issue-nav-next">NEXT ISSUE ⮕</Link></span>
         } else {
           return <span></span>
         }
