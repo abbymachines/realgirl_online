@@ -1,5 +1,7 @@
 .Issue-nav {
-    text-align:center;
+    /* text-align:right; */
+    /* clear: both; */
+    margin: 10px 200px 30px;
 }
 
 .Issue-nav > * {
@@ -17,4 +19,18 @@
 
 .Issue-nav a:hover, a:active {
     background-color: red;
+}
+
+.Issue-nav-previous > * {
+    /* text-align: left; */
+    float: left;
+}
+
+.Issue-nav-next > * {
+    /* text-align: right; */
+    float: right;
+}
+
+.clear {
+    clear: both;
 }
