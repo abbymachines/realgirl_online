@@ -29,7 +29,7 @@ const Layout = () => {
 
       <header className="App-header">
         <p className="Title">
-          realgirl.online
+          <Link to="/" className="Homepage-link">realgirl.online</Link>
         </p>
       </header>
 
