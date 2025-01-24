@@ -1,13 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
 import './Layout.css';
-import db from "./TableOfContents";
 import './App.css';
 
 const Layout = () => {
-  let issueKeys = Object.keys(db['issues']);
-  const latestIssue = issueKeys.length;
-  const latestIssueURL = `/issue/${latestIssue}`
-
   return (
     <div>
       <nav>
@@ -16,13 +11,10 @@ const Layout = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to={latestIssueURL}>Read</Link>
-          </li>
-          <li>
             <Link to="/issues">Archive</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </nav>
