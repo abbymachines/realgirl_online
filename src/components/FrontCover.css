@@ -2,11 +2,12 @@ li {
     list-style-type: none;
     padding: 10px;
     padding-inline-start: 5px;
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif; */
+    font-family: Helvetica, sans-serif;
 }
 
 p {
-    font-family: Georgia, serif;
+    font-family: Helvetica, sans-serif;
 }
 
 .Issue-title {
