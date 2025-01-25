@@ -10,6 +10,15 @@ ul.Nav-list {
     margin: 0;
 }
 
+ul.Nav-list a {
+    text-decoration: none;
+    color: black;
+}
+
+ul.Nav-list a:hover {
+    background-color: red;
+}
+
 .Homepage-link {
     text-decoration: none;
     color: white;
