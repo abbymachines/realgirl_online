@@ -51,7 +51,7 @@ export default function Post(props) {
           <div>Loading...</div>
         )}
       </div>
-      <PostNav issueId={issueId} latestIssueId={latestIssueId} postId={postId} />
+      <PostNav className="Issue-nav" issueId={issueId} latestIssueId={latestIssueId} postId={postId} />
     </div>
   );
 }
