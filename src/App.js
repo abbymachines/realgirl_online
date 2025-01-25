@@ -10,7 +10,7 @@ import Post from './components/Post.js';
 import NoPage from './NoPage.js';
 import ReactDOM from 'react-dom/client';
 import Issues from './components/Issues.js';
-import ReadPage from './pages/ReadPage.js';
+import ReadPage from './pages/IssuePage.js';
 
 import db from './TableOfContents.js';
 

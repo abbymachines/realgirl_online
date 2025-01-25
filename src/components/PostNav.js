@@ -1,32 +1,34 @@
 import { Link } from "react-router-dom";
-import { useMemo } from "react";
+import "react-router-dom";
 
-export default function PostNav({ issueId, latestIssueId, postId, lastPostInPreviousIssue }) {
-  // Memoize URLs to prevent unnecessary recalculations
-  const urls = useMemo(() => ({
-    previousPostURL: `/issue/${issueId}/${postId - 1}`,
-    previousIssuePostURL: `/issue/${issueId - 1}/${lastPostInPreviousIssue}`,
-  }), [issueId, postId, lastPostInPreviousIssue]);
+import { debounce } from 'lodash';
 
-  // Memoize the previous link element
-  const previousLink = useMemo(() => {
-    if (postId > 1) {
-      return (
-        <Link to={urls.previousPostURL}>PREVIOUS POST</Link>
-      );
-    } else if (postId <= 1 && issueId > 1) {
-      return (
-        <Link to={urls.previousIssuePostURL}>PREVIOUS POST</Link>
-      );
+export default function PostNav(props) {
+    const issueId = props.issueId;
+    const latestIssueId = props.latestIssueId;
+    const postId = props.postId;
+
+    const nextIssueURL = `/issue/${issueId + 1}`;
+    const previousIssueURL = `/issue/${issueId - 1}`;
+    const previousPostURL = `/issue/${issueId}/${postId - 1}`
+    const previousIssuePostURL = `/issue/${issueId}/${"somehow put in the last post of the previous issue"}`
+
+    function renderPreviousLink() {
+      if(postId > 1) {
+        console.log('GOING TO PREVIOUS POST OF SAME ISSUE')
+        return <span><Link to={previousPostURL}>PREVIOUS POST</Link></span>
+      } else if(postId <= 1 && issueId > 1) {
+        return <span><Link to={previousIssuePostURL}></Link></span>
+      } else if(postId <= 1 && issueId <= 1) {
+        return <span></span>
+      }
     }
-    return null;
-  }, [postId, issueId, urls]);
 
-  return (
-    <div className="Issue-nav">
-      <span className="Issue-nav-previous">
-        {previousLink}
-      </span>
-    </div>
-  );
+    return (
+      <div className="Issue-nav">
+        <span className="Issue-nav-previous">{renderPreviousLink()}</span> 
+        {/* <span className="Issue-nav-next">{renderNextLink()}</span> */}
+        {/* <div className="clear"></div> */}
+      </div>
+    )
 }
