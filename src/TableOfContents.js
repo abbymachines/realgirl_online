@@ -23,7 +23,7 @@ const db = {"issues": {
         "posts": {
             "1": {
                 "title": "first post of second issue",
-                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2"
             },
             "2": {
                 "title": "second post of second issue",
@@ -31,7 +31,7 @@ const db = {"issues": {
             },
             "3": {
                 "title": "third  post of second issue",
-                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2"
             }
         }
     },
@@ -45,7 +45,7 @@ const db = {"issues": {
             },
             "2": {
                 "title": "second post of third issue",
-                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2"
             },
             "3": {
                 "title": "third  post of third issue",
