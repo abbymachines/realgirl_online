@@ -20,3 +20,13 @@ p {
     border: 2px solid rgb(0, 0, 0);
     background-color: rgb(227, 226, 226);
 }
+
+.Front-cover a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.Front-cover a:hover {
+    color: red;
+}
