@@ -26,7 +26,7 @@ export default function PostNav(props) {
       if(postId > 1) {
         return <span><Link to={previousPostURL}>PREVIOUS POST</Link></span>
       } else if(postId <= 1 && issueId > 1) {
-        return <span><Link to={previousIssuePostURL}></Link></span>
+        return <span><Link to={previousIssuePostURL}>PREVIOUS POST</Link></span>
       } else if(postId <= 1 && issueId <= 1) {
         return <span></span>
       }

@@ -27,7 +27,6 @@ export default function IssueNav(props) {
     return (
       <div className="Issue-nav">
         <span className="Issue-nav-previous">{renderPreviousLink()}</span> <span className="Issue-nav-next">{renderNextLink()}</span>
-        {/* <div className="clear"></div> */}
       </div>
     )
 }
