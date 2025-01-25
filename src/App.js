@@ -29,7 +29,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="issue/:issueId" element={<ReadPage latestIssue={latestIssue} />} />
           <Route path="issues" element={<Issues latestIssue={latestIssue} />} />
-          <Route path="/issue/:issueId/:postId" element={<Post />} />
+          <Route path="/issue/:issueId/:postId" element={<Post latestIssueId={latestIssue} />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
