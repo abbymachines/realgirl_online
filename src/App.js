@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout.js';
 import Home from './pages/HomePage.js';
 import About from './About.js';
-import Issue from './components/Issue.js';
 import Post from './components/Post.js';
 import NoPage from './NoPage.js';
 import ReactDOM from 'react-dom/client';
@@ -19,9 +18,6 @@ function App() {
   const latestIssue = issueKeys.length;
 
   return (
-    // For more info about how to configure routes, visit
-    // https://www.w3schools.com/react/react_router.asp
-
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -42,26 +38,3 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
 
 export default App;
-
-// const routes = [
-//   {
-//     path: "/about",
-//     component: <AboutPage />,
-//   },
-//   {
-//     path: "/issue/:issueId",
-//     component: <Issue />
-//   },
-//   {
-//     path: "/issue/:issueId/post/:postId",
-//     component: <Post />
-//   },
-// ];
-
-// const { issueId, postId } = urlParams;
-// function getPost() {
-//   // const uri = db[issueId][postId];
-//   // const data = makeGetRequest(uri);
-//   const uri = db[]
-//   return data;
-// }

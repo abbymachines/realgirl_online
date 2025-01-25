@@ -2,7 +2,6 @@ import FrontCover from "./FrontCover";
 import "react-router-dom";
 import './Issue.css';
 import IssueNav from './IssueNav.js';
-import db from "../TableOfContents.js";
 
 export default function Issue(props) {
   const issueId = props.issueId;

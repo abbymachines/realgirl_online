@@ -1,8 +1,6 @@
-import { render, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './FrontCover.css';
 import db from '../TableOfContents';
-
-// import logo from '../images/long_egg_2.png';
 
 export default function FrontCover(props) {
   
