@@ -1,21 +1,29 @@
 import { Link } from "react-router-dom";
 import "react-router-dom";
 
-import { debounce } from 'lodash';
+import db from "../TableOfContents";
 
 export default function PostNav(props) {
     const issueId = props.issueId;
     const latestIssueId = props.latestIssueId;
     const postId = props.postId;
 
-    const nextIssueURL = `/issue/${issueId + 1}`;
-    const previousIssueURL = `/issue/${issueId - 1}`;
-    const previousPostURL = `/issue/${issueId}/${postId - 1}`
-    const previousIssuePostURL = `/issue/${issueId}/${"somehow put in the last post of the previous issue"}`
+    const currentIssueLatestPost = Object.keys(db["issues"][issueId]).length;
+
+    let previousIssueLatestPost = 0;
+
+    if (issueId > 1) {
+      previousIssueLatestPost = Object.keys(db["issues"][issueId - 1]).length;
+    }
+
+    const previousPostURL = `/issue/${issueId}/${postId - 1}`;
+    const previousIssuePostURL = `/issue/${issueId - 1}/${previousIssueLatestPost}`;
+
+    const nextPostURL = `/issue/${issueId}/${parseInt(postId) + 1}`;
+    const nextIssuePostURL = `/issue/${parseInt(issueId) + 1}/1`;
 
     function renderPreviousLink() {
       if(postId > 1) {
-        console.log('GOING TO PREVIOUS POST OF SAME ISSUE')
         return <span><Link to={previousPostURL}>PREVIOUS POST</Link></span>
       } else if(postId <= 1 && issueId > 1) {
         return <span><Link to={previousIssuePostURL}></Link></span>
@@ -24,11 +32,20 @@ export default function PostNav(props) {
       }
     }
 
+    function renderNextLink() {
+      if (postId < currentIssueLatestPost) {
+        return <span><Link to={nextPostURL}>NEXT POST</Link></span>
+      } else if(postId >= currentIssueLatestPost && issueId < latestIssueId) {
+        return <span><Link to={nextIssuePostURL}>NEXT POST</Link></span>
+      } else if(postId >= currentIssueLatestPost && issueId >= latestIssueId) {
+        return <span></span>
+      }
+    }
+
     return (
       <div className="Issue-nav">
         <span className="Issue-nav-previous">{renderPreviousLink()}</span> 
-        {/* <span className="Issue-nav-next">{renderNextLink()}</span> */}
-        {/* <div className="clear"></div> */}
+        <span className="Issue-nav-next">{renderNextLink()}</span>
       </div>
     )
 }

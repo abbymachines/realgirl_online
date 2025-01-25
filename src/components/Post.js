@@ -10,6 +10,8 @@ export default function Post(props) {
   const [error, setError] = useState(null);
   const latestIssueId = props.latestIssueId;
 
+  const currentIssueLatestPost = Object.keys(db["issues"][issueId]).length;
+
   useEffect(() => {
     const xhr = new XMLHttpRequest();
     
