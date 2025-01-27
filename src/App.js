@@ -24,9 +24,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="issue/:issueId" element={<ReadPage latestIssue={latestIssue} />} />
-          <Route path="archive" element={<ArchivePage latestIssue={latestIssue} />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/issue/:issueId" element={<ReadPage latestIssue={latestIssue} />} />
+          <Route path="/archive" element={<ArchivePage latestIssue={latestIssue} />} />
           <Route path="/issue/:issueId/:postId" element={<Post latestIssueId={latestIssue} />} />
           <Route path="*" element={<NoPage />} />
         </Route>
