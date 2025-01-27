@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import PostNav from "./PostNav";
 import db from "../TableOfContents";
@@ -42,7 +42,7 @@ export default function Post(props) {
   return (
     <div>
       <div className="Post">
-        <p>{issueId}.{postId}<br />{db["issues"][issueId]["posts"][postId]["title"]}</p>
+        <p><Link to={`/issue/${issueId}`}>{issueId}</Link>.{postId}<br />{db["issues"][issueId]["posts"][postId]["title"]}</p>
         {data ? (
           <div dangerouslySetInnerHTML={{__html: data[0].content.rendered}} />
         ) : (
