@@ -10,7 +10,7 @@ import NoPage from './NoPage.js';
 import ReactDOM from 'react-dom/client';
 // import Issues from './components/Issues.js';
 import ReadPage from './pages/IssuePage.js';
-import Archive from './pages/ArchivePage.js';
+import ArchivePage from './pages/ArchivePage.js';
 
 import db from './TableOfContents.js';
 
@@ -25,7 +25,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="issue/:issueId" element={<ReadPage latestIssue={latestIssue} />} />
-          <Route path="archive" element={<Archive latestIssue={latestIssue} />} />
+          <Route path="archive" element={<ArchivePage latestIssue={latestIssue} />} />
           <Route path="/issue/:issueId/:postId" element={<Post latestIssueId={latestIssue} />} />
           <Route path="*" element={<NoPage />} />
         </Route>
