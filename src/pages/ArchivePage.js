@@ -1,3 +1,4 @@
+import { render } from '@testing-library/react';
 import db from '../TableOfContents.js';
 import { Link } from 'react-router-dom';
 
@@ -20,10 +21,20 @@ for (let i = 1; i < issuesLength; i++) {
   issueNames.push(db['issues'][i.toString()]['title'])
 }
 
+function renderCoverImage(index) {
+  return `/images/${db['issues'][index + 1]['cover']}`
+}
+
 function ArchivePage() {
   return (
     <div className="Front-cover">
-      {issueNames.map((title, index) => <p><Link to={`/issue/${index + 1}`}>{index + 1}. {title}</Link></p>)}
+      {issueNames.map(
+        (title, index) =>
+          <p>
+            {console.log(db['issues'][index + 1]['cover'])}
+            
+            <Link to={`/issue/${index + 1}`}>{index + 1}. {title} <img src={renderCoverImage(index)}></img></Link>
+          </p>)}
     </div>
   )
 }

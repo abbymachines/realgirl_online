@@ -42,7 +42,7 @@ export default function Post(props) {
   return (
     <div>
       <div className="Post">
-        <p><Link to={`/issue/${issueId}`}>{issueId}</Link>.{postId}<br />{db["issues"][issueId]["posts"][postId]["title"]}</p>
+        <p className="Post-title"><Link to={`/issue/${issueId}`}>{issueId}.{postId}</Link><br />{db["issues"][issueId]["posts"][postId]["title"]}</p>
         {data ? (
           <div dangerouslySetInnerHTML={{__html: data[0].content.rendered}} />
         ) : (
