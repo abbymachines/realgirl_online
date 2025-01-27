@@ -25,7 +25,7 @@ const Layout = () => {
         </p>
       </header>
 
-      <div className="Grey-background">
+      <div>
         <Outlet />
       </div>
     </div>
