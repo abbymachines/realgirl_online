@@ -17,13 +17,13 @@ function renderCoverImage(index) {
 function ArchivePage() {
   return (
     <div className="Front-cover">
-      {issueNames.map(
+      {issueNames.toReversed().map(
         (title, index) =>
           <p>
-            {console.log(db['issues'][index + 1]['cover'])}
+            {console.log(db['issues'][(issuesLength - index) - 1]['cover'])}
             
             <center>
-              <Link to={`/issue/${index + 1}`}>{index + 1}. {title} <br></br> <img className='Archive-item-image' src={renderCoverImage(index)}></img></Link>
+              <Link to={`/issue/${issuesLength - (index + 1)}`}>{issuesLength - (index + 1)}. {title} <br></br> <img className='Archive-item-image' src={renderCoverImage(index)}></img></Link>
             </center>
           </p>)}
     </div>
