@@ -11,6 +11,7 @@ import ReactDOM from 'react-dom/client';
 // import Issues from './components/Issues.js';
 import ReadPage from './pages/IssuePage.js';
 import ArchivePage from './pages/ArchivePage.js';
+import AboutPage from './pages/AboutPage.js';
 
 import db from './TableOfContents.js';
 
@@ -23,7 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="about" element={<AboutPage />} />
           <Route path="issue/:issueId" element={<ReadPage latestIssue={latestIssue} />} />
           <Route path="archive" element={<ArchivePage latestIssue={latestIssue} />} />
           <Route path="/issue/:issueId/:postId" element={<Post latestIssueId={latestIssue} />} />
