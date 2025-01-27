@@ -1,7 +1,18 @@
+import FrontCover from "../components/FrontCover";
+
 export default function AboutPage() {
   return (
-    <div>
-      This is my website :3 isn't that neat!! This page specifically is my About page
+    <div className="Front-cover">
+      <p>
+        realgirl.online is a webzine by Abby Castillo.
+      </p>
+      <p>
+        <a href="https://patreon.com/abbymachines">Patreon</a>
+      </p>
+      <p>
+        <a href="https://abbymachines.art">abbymachines.art</a>
+      </p>
+
     </div>
   )
 }
