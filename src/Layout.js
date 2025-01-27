@@ -25,7 +25,7 @@ const Layout = () => {
         </p>
       </header>
 
-      <div>
+      <div className="Responsive">
         <Outlet />
       </div>
     </div>

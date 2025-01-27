@@ -24,7 +24,6 @@ ul.Nav-list a:hover {
     color: white;
 }
 
-/* .Layout {
-    display: flex;
-    flex-wrap: wrap;
-} */
+.Responsive {
+    max-width: 100%;
+}
