@@ -11,7 +11,7 @@ export default function Issue(props) {
   const latestIssueInt = parseInt(latestIssue);
 
   return (
-    <div>
+    <div className="Issue">
       <FrontCover issue={issueId} />
 
       <IssueNav className="Issue-nav" issueId={issueIdInt} latestIssueId={latestIssueInt} />

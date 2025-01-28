@@ -18,11 +18,10 @@ div.Post p {
     background-color: rgb(227, 226, 226);
 }
 
-/* .Post > img {
-    padding: 1em;
-    margin: auto auto 5%;
-    width: 50%;
-} */
+.wp-block-image > img {
+    width: 100%;
+    height: auto;
+}
 
 .Post-title a {
     text-decoration: none;

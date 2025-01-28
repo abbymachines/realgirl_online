@@ -17,7 +17,7 @@ p {
 .Front-cover {
     color: rgb(0, 0, 0);
     padding: 5em;
-    margin: auto auto 3%;
+    margin: auto auto auto;
     width: 50%;
     border: 2px solid rgb(0, 0, 0);
     background-color: rgb(227, 226, 226);

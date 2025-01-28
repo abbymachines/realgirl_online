@@ -1,18 +1,37 @@
+.Issue > * {
+    /* margin: auto auto 7%; */
+    /* margin: auto auto 7%; */
+    /* max-width: fit-content; */
+}
+
 .Issue-nav {
-    margin: 10px 200px 30px;
+    margin-height: 1vh;
 }
 
 .Issue-nav > * {
     color: white;
-    margin:auto;
+    /* margin:auto; */
+    /* margin: auto auto 7%; */
 }
 
 .Issue-nav a {
     color: white;
     text-decoration: none;
     background-color: black;
-    padding: 14px 25px;
+    padding: 1em 1em;
+    font-size: 90%;
 }
+
+/* .Issue-nav a only screen and (max-width: 600px) {
+    font-size
+} */
+
+/*  color: rgb(0, 0, 0);
+    padding: 5em;
+    margin: auto auto 3%;
+    width: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(227, 226, 226); */
 
 .Issue-nav a:hover, a:active {
     background-color: red;
