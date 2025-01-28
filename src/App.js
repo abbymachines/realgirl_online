@@ -1,6 +1,6 @@
 import './App.css';
 
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Layout from './Layout.js';
 import Home from './pages/HomePage.js';
@@ -20,7 +20,7 @@ function App() {
   const latestIssue = issueKeys.length;
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -31,7 +31,7 @@ function App() {
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 
 }
