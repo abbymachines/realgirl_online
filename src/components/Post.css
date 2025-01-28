@@ -18,6 +18,13 @@ div.Post p {
     background-color: rgb(227, 226, 226);
 }
 
+figure {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+
 .wp-block-image > img {
     width: 100%;
     height: auto;
