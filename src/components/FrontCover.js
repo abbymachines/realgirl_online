@@ -17,7 +17,7 @@ export default function FrontCover(props) {
   }
 
   function renderPostLink(postId) {
-    return (<div><span>{postId}</span>. <Link to={renderPostUrl(postId)}>{db['issues'][issue]['posts'][postId.toString()]['title']}</Link></div>)
+    return (<div><span>{postId}</span>. <i><Link to={renderPostUrl(postId)}>{db['issues'][issue]['posts'][postId.toString()]['title']}</Link></i></div>)
   }
 
   return (
