@@ -1,14 +1,13 @@
 import './App.css';
+// import React from 'react';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Layout from './Layout.js';
 import Home from './pages/HomePage.js';
-import About from './About.js';
 import Post from './components/Post.js';
 import NoPage from './NoPage.js';
 import ReactDOM from 'react-dom/client';
-// import Issues from './components/Issues.js';
 import ReadPage from './pages/IssuePage.js';
 import ArchivePage from './pages/ArchivePage.js';
 import AboutPage from './pages/AboutPage.js';
