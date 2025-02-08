@@ -16,25 +16,25 @@ const db = {"issues": {
                 "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
             }
         }
-    }
-    // "2": {
-    //     "title": "second issue",
-    //     "cover": "cover_2.png",
-    //     "posts": {
-    //         "1": {
-    //             "title": "first post of second issue",
-    //             "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2"
-    //         },
-    //         "2": {
-    //             "title": "second post of second issue",
-    //             "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
-    //         },
-    //         "3": {
-    //             "title": "third  post of second issue",
-    //             "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2"
-    //         }
-    //     }
-    // },
+    },
+    "2": {
+        "title": "second issue",
+        "cover": "cover_2.png",
+        "posts": {
+            "1": {
+                "title": "first post of second issue",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2"
+            },
+            "2": {
+                "title": "second post of second issue",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
+            },
+            "3": {
+                "title": "third  post of second issue",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2"
+            }
+        }
+    },
     // "3": {
     //     "title": "third issue",
     //     "cover": "long_egg_2.png",
