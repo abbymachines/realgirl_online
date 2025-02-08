@@ -18,20 +18,20 @@ const db = {"issues": {
         }
     },
     "2": {
-        "title": "second issue",
+        "title": "Documentation",
         "cover": "cover_2.png",
         "posts": {
             "1": {
-                "title": "first post of second issue",
-                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2"
+                "title": "what time is it where you live? [0]",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=what-time-is-it-where-you-live"
             },
             "2": {
-                "title": "second post of second issue",
-                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
+                "title": "i don't want to die (v0)",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=i-dont-want-to-die-v0"
             },
             "3": {
-                "title": "third  post of second issue",
-                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2"
+                "title": "Low-resolution anarchy A",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=low-resolution-anarchy-a"
             }
         }
     },
