@@ -54,7 +54,7 @@ p {
     margin: 0 5px 10px 0;
     overflow: clip;
     padding: 12px 40px;
-    text-align: center;
+    text-align: left;
     text-transform: none;
     touch-action: manipulation;
     user-select: none;

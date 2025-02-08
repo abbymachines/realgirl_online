@@ -22,8 +22,7 @@ export default function FrontCover(props) {
             <button type="button" className="Post-button">
             <span>
             {postId}
-            </span>.
-              {db['issues'][issue]['posts'][postId.toString()]['title']}
+            </span>. {db['issues'][issue]['posts'][postId.toString()]['title']}
             </button>
           </Link>
           )
