@@ -35,6 +35,19 @@ figure {
     color: black;
 }
 
-.Post-title a:hover {
+.wp-block-embed * {
+    height: 60vh;
+    width: 100%;
+}
+
+/* body.site-as-giant-card {
+    background-color: red;
+}
+
+.html5-video-player {
+    background-color: red;
+} */
+
+.html-video-player {
     background-color: red;
 }
