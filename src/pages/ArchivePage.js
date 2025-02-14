@@ -11,7 +11,7 @@ for (let i = 1; i < issuesLength; i++) {
 }
 
 function renderCoverImage(index) {
-  return `/images/${db['issues'][index + 1]['cover']}`
+  return `/images/${db['issues'][index]['cover']}`
 }
 
 function ArchivePage() {
@@ -23,7 +23,7 @@ function ArchivePage() {
             {console.log(db['issues'][(issuesLength - index) - 1]['cover'])}
             
             <center>
-              <Link to={`/issue/${issuesLength - (index + 1)}`}>{issuesLength - (index + 1)}. {title} <br></br> <img className='Archive-item-image' src={renderCoverImage(index)}></img></Link>
+              <Link to={`/issue/${issuesLength - (index + 1)}`}>{issuesLength - (index + 1)}. {title} <br></br> <img className='Archive-item-image' src={renderCoverImage(issuesLength - (index + 1))}></img></Link>
             </center>
           </p>)}
     </div>
