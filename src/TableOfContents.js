@@ -22,7 +22,7 @@ const db = {"issues": {
         "cover": "cover_2.png",
         "posts": {
             "1": {
-                "title": "what time is it where you live? [0]",
+                "title": "what day is it where you live? [0]",
                 "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=what-time-is-it-where-you-live"
             },
             "2": {
