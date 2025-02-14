@@ -11,6 +11,7 @@ import ReactDOM from 'react-dom/client';
 import ReadPage from './pages/IssuePage.js';
 import ArchivePage from './pages/ArchivePage.js';
 import AboutPage from './pages/AboutPage.js';
+import ScrollToTop from './components/ScrollToTop.js';
 
 import db from './TableOfContents.js';
 
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
