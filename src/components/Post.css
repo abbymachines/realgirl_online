@@ -9,14 +9,28 @@ div.Post p {
     font-family: Helvetica, sans-serif;
 }
 
-.Post {
-    color: rgb(0, 0, 0);
-    padding: 5em;
-    margin: auto auto 3%;
-    width: 50%;
-    border: 2px solid rgb(0, 0, 0);
-    background-color: rgb(227, 226, 226);
+@media screen and (min-width: 00px) {
+    .Post {
+        color: rgb(0, 0, 0);
+        padding: 4em;
+        margin: auto auto 3%;
+        width: 50vw;
+        border: 2px solid rgb(0, 0, 0);
+        background-color: rgb(227, 226, 226);
+    }
 }
+
+@media screen and (max-width: 600px) {
+    .Post {
+        color: rgb(0, 0, 0);
+        padding: 1em;
+        margin: auto auto 3%;
+        width: 85vw;
+        border: 2px solid rgb(0, 0, 0);
+        background-color: rgb(227, 226, 226);
+    }
+}
+
 
 figure {
     margin-inline-start: 0px;
