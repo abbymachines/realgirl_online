@@ -40,16 +40,16 @@ export default function Post(props) {
   }
 
   return (
-    <div>
-      <div className="Post">
+    <article>
+      <section className="Post">
         <p className="Post-title"><Link to={`/issue/${issueId}`}>{issueId}.{postId}</Link><br />{db["issues"][issueId]["posts"][postId]["title"]}</p>
         {data ? (
-          <div dangerouslySetInnerHTML={{__html: data[0].content.rendered}} />
+          <section dangerouslySetInnerHTML={{__html: data[0].content.rendered}} />
         ) : (
-          <div>Loading...</div>
+          <section>Loading...</section>
         )}
-      </div>
+      </section>
       <PostNav className="Issue-nav" issueId={issueId} latestIssueId={latestIssueId} postId={postId} />
-    </div>
+    </article>
   );
 }
