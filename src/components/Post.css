@@ -24,7 +24,7 @@ div.Post p {
     .Post {
         color: rgb(0, 0, 0);
         padding: 1em;
-        margin: auto auto 3%;
+        margin: auto auto 3vh;
         width: 85vw;
         border: 2px solid rgb(0, 0, 0);
         background-color: rgb(227, 226, 226);
