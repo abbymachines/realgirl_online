@@ -1,5 +1,7 @@
 const db = {"issues": {
     "1": {
+        "year": 2025,
+        "month": 1,
         "title": "Poetry is the universe is actually the river",
         "cover": "long_egg_2.png",
         "posts": {
@@ -18,6 +20,8 @@ const db = {"issues": {
         }
     },
     "2": {
+        "year": 2025,
+        "month": 2,
         "title": "Documentation",
         "cover": "cover_2.png",
         "posts": {

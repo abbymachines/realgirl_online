@@ -12,13 +12,17 @@ p {
 }
 
 @media screen and (min-width: 600px) {
-    .Front-cover {
-      color: rgb(0, 0, 0);
-      padding: 5em;
-      margin: auto auto auto;
-      width: 50%;
-      border: 2px solid rgb(0, 0, 0);
-      background-color: rgb(227, 226, 226);
+  .Front-cover {
+    color: rgb(0, 0, 0);
+    padding: 5em;
+    margin: auto auto auto;
+    width: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(227, 226, 226);
+  }
+  
+  .Post-button {
+    padding: 15px 15px;
   }
 }
 
@@ -92,10 +96,3 @@ p {
     box-shadow: #c2c2c2 2px 2px 0 0, #000 2px 2px 0 1px;
     transform: translate(2px, 2px);
   }
-
-  @media (min-width: 768px) {
-    .Post-button {
-      padding: 15px 15px;
-    }
-  }
-
