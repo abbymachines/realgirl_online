@@ -11,6 +11,12 @@ p {
     text-align: center;
 }
 
+.Issue-date {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: small;
+}
+
 @media screen and (min-width: 600px) {
   .Front-cover {
     color: rgb(0, 0, 0);

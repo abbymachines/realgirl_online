@@ -3,7 +3,7 @@ import './FrontCover.css';
 import db from '../TableOfContents';
 
 export default function FrontCover(props) {
-  
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
   const issue = props.issue;
   let postIds = Object.keys(db['issues'][issue]['posts'])
@@ -33,6 +33,8 @@ export default function FrontCover(props) {
         <p className='Issue-title'>
           {issue}. {db['issues'][issue]['title']}
         </p>
+
+        <p className='Issue-date'>{db['issues'][issue]['year']} {months[db['issues'][issue]['month'] - 1]}</p>
 
         <center><img src={renderCoverImage()}className="App-logo" alt="logo" /></center>
 
