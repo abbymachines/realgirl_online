@@ -8,7 +8,7 @@ export default function PostNav(props) {
     const latestIssueId = props.latestIssueId;
     const postId = props.postId;
 
-    const currentIssueLatestPost = Object.keys(db["issues"][issueId]).length;
+    const currentIssueLatestPost = Object.keys(db["issues"][issueId]["posts"]).length;
 
     let previousIssueLatestPost = 0;
 
