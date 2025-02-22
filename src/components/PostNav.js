@@ -13,7 +13,7 @@ export default function PostNav(props) {
     let previousIssueLatestPost = 0;
 
     if (issueId > 1) {
-      previousIssueLatestPost = Object.keys(db["issues"][issueId - 1]).length;
+      previousIssueLatestPost = Object.keys(db["issues"][issueId - 1]["posts"]).length;
     }
 
     const previousPostURL = `/issue/${issueId}/${postId - 1}`;
