@@ -39,24 +39,34 @@ const db = {"issues": {
             }
         }
     },
-    // "3": {
-    //     "title": "third issue",
-    //     "cover": "long_egg_2.png",
-    //     "posts": {
-    //         "1": {
-    //             "title": "first post of third issue",
-    //             "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
-    //         },
-    //         "2": {
-    //             "title": "second post of third issue",
-    //             "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2"
-    //         },
-    //         "3": {
-    //             "title": "third  post of third issue",
-    //             "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=3"
-    //         }
-    //     }
-    // }
+    "3": {
+        "title": "god only heals to deliver you back to the devil",
+        "cover": "long_egg_slices.png",
+        "year": 2025,
+        "month": 3,
+        "posts": {
+            "1": {
+                "title": "May we all follow the brave example of the UC strikers.",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=uc-santa-cruz-workers-are-still-on-a-wildcat-strike-for-a-cost-of-living-adjustment-cola"
+            },
+            "2": {
+                "title": "Deleuze & Guattari on desiring-machines",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=deleuze-guattari-on-desiring-machines"
+            },
+            "3": {
+                "title": "like a cloud",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2019-12-27"
+            },
+            "4": {
+                "title": "the early years",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2020-11-12"
+            },
+            "5": {
+                "title": "soon i will become a castaway of my own broken soul",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=soon-i-will-become-a-castaway-of-my-own-broken-soul"
+            }
+        }
+    }
 }}
 
 export default db;
