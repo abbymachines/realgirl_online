@@ -46,8 +46,8 @@ const db = {"issues": {
         "month": 3,
         "posts": {
             "1": {
-                "title": "May we all follow the brave example of the UC strikers.",
-                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=uc-santa-cruz-workers-are-still-on-a-wildcat-strike-for-a-cost-of-living-adjustment-cola"
+                "title": "May we all _____________________________________________.",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2oiu309jksakjdiaaiu"
             },
             "2": {
                 "title": "Deleuze & Guattari on desiring-machines",
