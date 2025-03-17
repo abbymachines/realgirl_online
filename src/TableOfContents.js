@@ -46,7 +46,7 @@ const db = {"issues": {
         "month": 3,
         "posts": {
             "1": {
-                "title": "May we all _____________________________________________.",
+                "title": "May we all ________.",
                 "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=2oiu309jksakjdiaaiu"
             },
             "2": {
