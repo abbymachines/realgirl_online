@@ -39,6 +39,10 @@ figure {
     margin-block-start: 0em;
 }
 
+div.embed-tiktok {
+    width: 10px;
+}
+
 .wp-block-image > img {
     width: 100%;
     height: auto;

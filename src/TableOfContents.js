@@ -66,6 +66,22 @@ const db = {"issues": {
                 "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=soon-i-will-become-a-castaway-of-my-own-broken-soul"
             }
         }
+    },
+    "4": {
+        "title": "A (AR video series)",
+        "cover": "long_egg_slices.png",
+        "year": 2025,
+        "month": 4,
+        "posts": {
+            "1": {
+                "title": "Abstract",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-ar-video-series"
+            },
+            "2": {
+                "title": "A #0",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-0"
+            }
+        }
     }
 }}
 

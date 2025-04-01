@@ -11,6 +11,18 @@ export default function Post(props) {
   const latestIssueId = props.latestIssueId;
 
   useEffect(() => {
+    if (!window.tiktokEmbed) {
+      const script = document.createElement('script');
+      script.src = 'https://www.tiktok.com/embed.js';
+      script.async = true;
+      script.onload = () => window.tiktokEmbed?.lib.render(); // Manually trigger render
+      document.body.appendChild(script);
+    } else {
+      window.tiktokEmbed.lib.render(); // Re-render if script already loaded
+    }
+  }, [data]);
+
+  useEffect(() => {
     const xhr = new XMLHttpRequest();
     
     xhr.open('GET', `${db["issues"][issueId]["posts"][postId]["URL"]}`);
@@ -34,10 +46,6 @@ export default function Post(props) {
       xhr.abort(); // Abort the request if component unmounts
     };
   }, [issueId, postId]); // Dependencies array with relevant values
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
 
   return (
     <article>
