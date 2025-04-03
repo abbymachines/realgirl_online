@@ -69,7 +69,7 @@ const db = {"issues": {
     },
     "4": {
         "title": "A (AR video series)",
-        "cover": "long_egg_slices.png",
+        "cover": "A_AR videos.png",
         "year": 2025,
         "month": 4,
         "posts": {
@@ -78,8 +78,20 @@ const db = {"issues": {
                 "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-ar-video-series"
             },
             "2": {
-                "title": "A #0",
+                "title": "A #0 (2023)",
                 "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-0"
+            },
+            "3": {
+                "title": "A #1 (2023)",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-1"
+            },
+            "4": {
+                "title": "A #2 (2023)",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-2"
+            },
+            "5": {
+                "title": "A #3 (2024)",
+                "URL": "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-3"
             }
         }
     }
