@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { useState, useEffect, useRef } from 'react'; // Added useRef
+import { useState, useEffect, useRef } from 'react';
 import PostNav from "./PostNav";
 import db from "../TableOfContents";
 import './Post.css';
@@ -9,9 +9,9 @@ export default function Post(props) {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const latestIssueId = props.latestIssueId;
-  const postContentRef = useRef(null); // Ref for the content container
+  const postContentRef = useRef(null);
+  const tikTokScriptRef = useRef(null);
 
-  // Transform WordPress TikTok embeds to TikTok's blockquote format
   const transformTikTokEmbeds = (html) => {
     return html.replace(
       /<figure class="wp-block-embed(.*?)tiktok(.*?)<div class="wp-block-embed__wrapper">(.*?)(https:\/\/www.tiktok.com\/@[^\/]+\/video\/\d+)(.*?)<\/div><\/figure>/gis,
@@ -26,35 +26,52 @@ export default function Post(props) {
     );
   };
 
-  // Load TikTok script and render embeds
+  // Clean up ALL TikTok scripts
+  const cleanTikTokScripts = () => {
+    // Remove our manually added script
+    if (tikTokScriptRef.current) {
+      document.body.removeChild(tikTokScriptRef.current);
+      tikTokScriptRef.current = null;
+    }
+    
+    // Remove TikTok's auto-injected script
+    const ttScript = document.getElementById('ttEmbedLibScript');
+    if (ttScript) {
+      document.body.removeChild(ttScript);
+    }
+    
+    // Clear TikTok's global state
+    if (window.tiktokEmbed) {
+      delete window.tiktokEmbed;
+    }
+  };
+
+  // Handle TikTok embed rendering
   useEffect(() => {
     if (!data) return;
 
-    const renderTikTokEmbeds = () => {
-      if (window.tiktokEmbed) {
-        try {
-          window.tiktokEmbed.lib.render();
-        } catch (e) {
-          console.error("TikTok render failed:", e);
-        }
-      }
-    };
-
-    if (!window.tiktokEmbed) {
+    const renderEmbeds = () => {
+      cleanTikTokScripts();
+      
       const script = document.createElement('script');
       script.src = 'https://www.tiktok.com/embed.js';
       script.async = true;
-      script.onload = renderTikTokEmbeds;
+      script.onload = () => {
+        // Small delay to ensure DOM is ready
+        setTimeout(() => {
+          if (window.tiktokEmbed) {
+            window.tiktokEmbed.lib.render();
+          }
+        }, 100);
+      };
+      
       document.body.appendChild(script);
-    } else {
-      renderTikTokEmbeds();
-    }
-
-    return () => {
-      // Clean up script if needed
-      const script = document.querySelector('script[src="https://www.tiktok.com/embed.js"]');
-      if (script) document.body.removeChild(script);
+      tikTokScriptRef.current = script;
     };
+
+    renderEmbeds();
+
+    return cleanTikTokScripts;
   }, [data]);
 
   // Fetch post data
@@ -65,7 +82,6 @@ export default function Post(props) {
     xhr.onload = function() {
       if (xhr.status === 200) {
         const responseData = JSON.parse(xhr.responseText);
-        // Transform embeds before setting data
         if (responseData[0]?.content?.rendered) {
           responseData[0].content.rendered = transformTikTokEmbeds(responseData[0].content.rendered);
         }
@@ -81,13 +97,16 @@ export default function Post(props) {
 
     xhr.send();
 
-    return () => xhr.abort();
+    return () => {
+      xhr.abort();
+      cleanTikTokScripts();
+    };
   }, [issueId, postId]);
 
   return (
     <article>
       <section className="Post">
-        <p className="Post-title">
+      <p className="Post-title">
           <Link to={`/issue/${issueId}`}>{issueId}.{postId}</Link><br />
           {db["issues"][issueId]["posts"][postId]["title"]}
         </p>
