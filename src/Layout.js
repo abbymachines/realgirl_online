@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
-import './Layout.css';
-import './App.css';
+import "./Layout.css";
+import "./App.css";
 
 const Layout = () => {
   return (
@@ -16,12 +16,17 @@ const Layout = () => {
           <li>
             <Link to="/about">About</Link>
           </li>
+          <li>
+            <Link to="/realgirl1994">realgirl1994</Link>
+          </li>
         </ul>
       </nav>
 
       <header className="App-header">
         <p className="Title">
-          <Link to="/" className="Homepage-link">realgirl.online</Link>
+          <Link to="/" className="Homepage-link">
+            realgirl.online
+          </Link>
         </p>
       </header>
 
@@ -29,7 +34,7 @@ const Layout = () => {
         <Outlet />
       </div>
     </div>
-  )
+  );
 };
 
 export default Layout;
