@@ -70,7 +70,7 @@ const db = {
       },
     },
     4: {
-      title: "Alphabet",
+      title: "Alpha",
       cover: "A_AR videos.png",
       year: 2025,
       month: 4,
@@ -80,23 +80,51 @@ const db = {
           URL: "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-ar-video-series",
         },
         2: {
-          title: "Alphabet #0 (2023)",
+          title: "Alpha #0 (2023)",
           URL: "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-0",
         },
         3: {
-          title: "Alphabet #1 (2023)",
+          title: "Alpha #1 (2023)",
           URL: "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-1",
         },
         4: {
-          title: "Alphabet #2 (2023)",
+          title: "Alpha #2 (2023)",
           URL: "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-2",
         },
         5: {
-          title: "Alphabet #3 (2024)",
+          title: "Alpha #3 (2024)",
           URL: "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-3",
         },
       },
     },
+    5: {
+        title: "Anarchy A",
+        cover: "A_AR videos.png",
+        year: 2025,
+        month: 10,
+        posts: {
+        1: {
+          title: "README",
+          URL: "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-ar-video-series",
+        },
+        2: {
+          title: "Alpha #0 (2023)",
+          URL: "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-0",
+        },
+        3: {
+          title: "Alpha #1 (2023)",
+          URL: "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-1",
+        },
+        4: {
+          title: "Alpha #2 (2023)",
+          URL: "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-2",
+        },
+        5: {
+          title: "Alpha #3 (2024)",
+          URL: "https://public-api.wordpress.com/wp/v2/sites/abbymachines.wordpress.com/posts?slug=a-3",
+        },
+      },
+    }
   },
 };
 
